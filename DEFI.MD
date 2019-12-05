@@ -3,7 +3,8 @@
 1. Réseau social
 2. Escape Game
 3. RickRoll moi pour une bonne cause
-4. 404 GAME FOUND
+4. Une convention de nommage pas comme les autres
+5. 404 GAME FOUND
 
 
 ## Idée
@@ -28,6 +29,10 @@ Votre but, est d'enqueter autour de son étonante disparition en interrogeant le
 ### 3 - RickRoll moi pour une bonne cause
 
 Ce défi de montrer notre ami Rick Astley en train de danser, s'affichera lorsque l'on arrive à la fin de l'escape game.
+
+### 4 - Une convention de nommage pas comme les autres
+
+Defi abandonné :c
 
 ### 5 - 404 GAME FOUND
 
