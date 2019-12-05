@@ -18,7 +18,7 @@ Le but de cet escape game est ~~de gagner~~ de trouver qui est l'assation de Ric
 
 Communiquer avec ses amis sur internet est génial. On peut partager des photos, des vidéos, des liens. On peut discutter entre nous, faire des diffusions en direct.
 
-Nous developpons donc un réseau social afin que tout le monde puisse échanger avec ses amis des moments de joie !
+Nous developpons donc un réseau social afin que tout le monde puisse échanger avec ses amis des moments de joie !r
 
 ### 2 - Escape Game
 
