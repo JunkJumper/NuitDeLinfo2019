@@ -1,13 +1,7 @@
+//VARIABLES
 var personnage;
 var obstacle = [];
 var score;
-
-function startGame() {
-    personnage = new component(30, 30, "red", 10, 120);
-    personnage.gravity = 0.05;
-    score = new component("30px", "Consolas", "black", 280, 40, "text");
-    plateau.start();
-}
 
 var plateau = {
     canvas: document.createElement("canvas"),
@@ -15,6 +9,7 @@ var plateau = {
         this.canvas.width = 480;
         this.canvas.height = 270;
         this.context = this.canvas.getContext("2d");
+        this.canvas.style = "position:absolute; left: 50%;  margin-left: -250px; bottom: 50%; margin-bottom: +50px";
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.frameNo = 0;
         this.interval = setInterval(updateGameArea, 20);
@@ -24,6 +19,7 @@ var plateau = {
     }
 }
 
+//CONSTRUCTEURS
 function component(largeur, longueur, color, x, y, type) {
     this.type = type;
     this.score = 0;
@@ -75,6 +71,16 @@ function component(largeur, longueur, color, x, y, type) {
         return crash;
     }
 }
+
+//METHODES
+function startGame() {
+    personnage = new component(30, 30, "blue", 10, 120);
+    personnage.gravity = 0.05;
+    score = new component("30px", "Consolas", "black", 280, 40, "text");
+    plateau.start();
+}
+
+
 
 function updateGameArea() {
     var x, taille, gap, tailleMin, tailleMax, minGap, maxGap;
