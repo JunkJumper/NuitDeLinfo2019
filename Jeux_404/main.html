@@ -8,14 +8,19 @@
             border: 1px solid #d3d3d3;
             background-color: #f1f1f1;
         }
+        
+        .center {
+            text-align: center;
+        }
     </style>
 </head>
 
 <body onload="startGame()">
+    <h1 class="center">Fuyez l'homme en noir !</h1>
     <script src="./script.js"></script>
+
     <br>
-    <button onmousedown="sauter(-0.5)" onmouseup="sauter(0.05)">SAUTER</button>
-    <p>Fuyez l'homme en noir !</p>
+    <button onmousedown="sauter(-0.5)" onmouseup="sauter(0.05)" class="center">SAUTER</button>
 </body>
 
 </html>
