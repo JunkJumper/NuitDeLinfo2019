@@ -24,7 +24,7 @@ Le but de cet escape game est ~~de gagner~~ de trouver qui est l'assation de Ric
 
 ### 3 - RickRoll moi pour une bonne cause
 
-
+Ce défi de montrer notre ami Rick Astley en train de danser, s'affichera lorsque l'on arrive à la fin de l'escape game.
 
 ### 4 - Une convention de nommage pas comme les autres
 
