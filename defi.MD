@@ -20,7 +20,9 @@ Le but de cet escape game est ~~de gagner~~ de trouver qui est l'assation de Ric
 
 ### 2 - Escape Game
 
+Une terrible nouvelle est arrivée dans la province Tewith. Le célèbre danseur Rick Astley est porté disparu. Une rumeur est diffusée sur {INSERER NOM RESEAU SOCAIL} comme quoi, notre chanteur serait mort.
 
+Votre but, est d'enqueter autour de son étonante disparition en interrogeant les dernières personnes avec qui il a pu discuter via son compte {INSERER NOM RESEAU SOCAIL}.
 
 ### 3 - RickRoll moi pour une bonne cause
 
