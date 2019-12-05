@@ -28,7 +28,7 @@ Le but de cet escape game est ~~de gagner~~ de trouver qui est l'assation de Ric
 
 ### 4 - Une convention de nommage pas comme les autres
 
-
+Nous avons décidé de nommer toutes nos variables avec des noms de poneys de l'unnivers My Little Pony : Friendship is Magic !
 
 ### 5 - 404 GAME FOUND
 
