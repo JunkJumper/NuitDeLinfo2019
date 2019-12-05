@@ -1,0 +1,17 @@
+CREATE TABLE IDENTITE (
+    idIdentite INT NOT NULL AUTO_INCREMENT ,
+    nom VARCHAR(30) NOT NULL ,
+    prenom VARCHAR(30) NOT NULL ,
+    email VARCHAR(50) NOT NULL ,
+    dateNaissance DATE NOT NULL ,
+    genre VARCHAR(20) NOT NULL ,
+    PRIMARY KEY (idIdentite)
+);
+
+CREATE TABLE USER (
+    idUser INT NOT NULL AUTO_INCREMENT,
+    login VARCHAR(20) NOT NULL,
+    password VARCHAR(20) NOT NULL,
+
+)
+
