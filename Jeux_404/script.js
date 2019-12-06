@@ -92,8 +92,8 @@ function updateGameArea() {
     plateau.frameNo += 1;
     if (plateau.frameNo == 1 || everyinterval(150)) { //pour créer les barres
         x = plateau.canvas.width;
-        longueurMin = 20;
-        longueurMax = 150;
+        longueurMin = 55;
+        longueurMax = 500;
         longueur = Math.floor(Math.random() * (longueurMax - longueurMin + 1) + longueurMin);
         minGap = 50;
         maxGap = 200;
