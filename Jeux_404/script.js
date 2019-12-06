@@ -120,8 +120,8 @@ function everyinterval(n) {
 function jeuxFini(i) {
     var messageMort;
     if (personnage.crashWith(obstacle[i])) {
-        messageMort = new component("30px", "Consolas", "red", 150, 60, "text");
-        messageMort.text = "Il vous à attrapé...";
+        messageMort = new component("30px", "Consolas", "red", 150, 80, "text");
+        messageMort.text = "Il vous à rattrapé...";
         messageMort.update();
     }
 }

@@ -18,6 +18,7 @@ button {
 }
 
 img {
+    position: relative;
     margin-top: -10px;
     margin-left: +300px;
 }
