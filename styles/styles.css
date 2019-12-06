@@ -2,14 +2,18 @@ body {
     margin-top: 0;
     font-family: calibri;
     text-decoration: none;
-    background-color: ghostwhite;
+    background-color: #4F067C;
     color: black;
 }
 
-body > main {
+body>main {
     padding-top: 49px;
     padding-left: 15%;
     width: 70%;
+}
+
+footer {
+    color: white;
 }
 
 
@@ -23,12 +27,11 @@ nav {
     width: 100%;
     color: white;
     text-align: center;
-
 }
 
 .navbar {
     overflow: hidden;
-    background-color: #8A0457;
+    background-color: #12003E;
     position: fixed;
     top: 0;
     width: 100%;
@@ -45,14 +48,9 @@ nav {
 }
 
 .navbar a:hover {
-    background: #80024A;
+    background: #1A0044;
 }
 
-.header {
-    background-image: url("Photos_190223-26_Bulgarie-7306-1600x2400.jpg");
-    background-color: red;
-    height: 20%;
-}
 
 /* ================================= */
 
@@ -66,7 +64,7 @@ section.section-profile {
     display: flex;
     padding: 180px 30px 0;
     width: 100%;
-    background-image: url(https://images.unsplash.com/photo-1562887085-22edc4817a9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80);
+    background-image: url(https://www.lifeofpix.com/wp-content/uploads/2019/02/308-name05322-jj-1600x867.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -84,11 +82,11 @@ section.section-profile {
 }
 
 .section-profile-informations h2 {
+    color: white;
     margin-right: 24px;
     font-size: 36px;
     align-self: flex-end;
 }
-
 
 .section-profile-informations span {
     margin-left: auto;
@@ -123,7 +121,7 @@ section.section-profile {
     float: left;
 }
 
-.header > p {
+.header>p {
     font-size: 40px;
 }
 
@@ -152,10 +150,6 @@ p.bio {
 
 
 /* ================================= */
-/*
-.text-block {
-    position: absolute;
-}*/
 
 .box {
     box-sizing: border-box;
@@ -174,32 +168,15 @@ p.bio {
     display: table;
 }
 
-.haut {
-    display: flex;
-    background-image: url(../img/Photos_190223-26_Bulgarie-7306-1600x2400.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 600px;
-    background-position: -20%;
-
-}
-
-.rond {
-    background-color: red;
-    height: 200px;
-    justify-content: flex-end;
-    align-content: flex-end;
-    width: 100%;
-}
-
 .title {
     color: dimgrey;
     text-decoration: underline;
     font-size: 18px;
 }
 
-img {
+.amis img {
     width: 50px;
+    height: 50px;
     border: 1px solid grey;
     border-radius: 2px;
 }
@@ -218,23 +195,76 @@ img {
     text-decoration: underline;
 }
 
+
 /* =================== */
 
 .post {
+    margin-bottom: 20px;
+    border-radius: 2px;
     border: 1px solid grey;
     box-sizing: border-box;
     float: left;
     width: 100%;
     padding: 30px;
+    text-align: center;
 }
 
-.post > img {
-    display: block;
+
+/* ==================================== */
+
+.titre2 img:first-child {
+    position: relative;
+    top: 30%;
+    margin-left: 24px;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    object-position: center;
+    border: 4px solid #fff;
+    border-radius: 70px;
+}
+
+.post>img:nth-child(2) {
+    border-radius: 3px;
+    width: 400px;
+}
+
+.titre2 h2 {
+    font-size: 15px;
+    align-self: flex-end;
+}
+
+span {
     margin-left: auto;
-    margin-right: auto;
-    margin: 0;
-    z-index: 90;
-    width: 100px;
-    clip-path: circle(30%);
-    float: left;
+    margin-bottom: 30px;
+    color: rgba(0, 0, 0, .5);
+    font-size: 15px;
+    font-style: italic;
+    align-self: flex-end;
+}
+
+
+/* ====== Bouton caché ! ====== */
+
+.button a {
+    background-color: transparent;
+    /* Green */
+    left: 46%;
+    bottom: 84%;
+    border: none;
+    color: rgba(255, 255, 255, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.secret {
+    padding: 30px 20px;
+}
+
+span#defi a {
+    color: #fff;
 }
