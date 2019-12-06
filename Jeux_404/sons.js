@@ -1,9 +1,46 @@
-var x = document.getElementById("myAudio");
+//ATTRIBUTS
+var son = document.getElementById("monAudio");
 
-function playAudio() {
-    x.play();
+//CONSTRUCTEUR
+// source: https://stackoverflow.com/a/11331200/4298200
+function Sound(source, volume, loop) {
+    this.source = source;
+    this.volume = volume;
+    this.loop = loop;
+    var son;
+    this.son = son;
+    this.finish = false;
+    this.stop = function() {
+        document.body.removeChild(this.son);
+    }
+    this.start = function() {
+        if (this.finish) return false;
+        this.son = document.createElement("embed");
+        this.son.setAttribute("src", this.source);
+        this.son.setAttribute("hidden", "true");
+        this.son.setAttribute("volume", this.volume);
+        this.son.setAttribute("autostart", "true");
+        this.son.setAttribute("loop", this.loop);
+        document.body.appendChild(this.son);
+    }
+    this.remove = function() {
+        document.body.removeChild(this.son);
+        this.finish = true;
+    }
+    this.init = function(volume, loop) {
+        this.finish = false;
+        this.volume = volume;
+        this.loop = loop;
+    }
 }
 
-function pauseAudio() {
-    x.pause();
+//METHODE
+function playAudio() {
+    var bruit = new Sound("sons\OhPonyBoy_-_WOUTIPOUP.mp3", 100, false);
+    bruit.start();
+}
+
+//GETTER
+function getSon() {
+    return this.son;
 }
