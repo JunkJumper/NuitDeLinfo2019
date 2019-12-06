@@ -119,5 +119,12 @@ function everyinterval(n) {
 }
 
 function sauter(n) {
+    let audio = new Audio("./");
+    audio.play();
     personnage.gravity = n;
+}
+
+//GETTER
+function getScore() {
+    return score;
 }
