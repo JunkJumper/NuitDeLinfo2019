@@ -76,7 +76,7 @@ function component(largeur, longueur, color, x, y, type) {
 function startGame() {
     personnage = new component(30, 50, "blue", 10, 120);
     personnage.gravity = 0.05;
-    score = new component("30px", "Consolas", "black", 280, 40, "text");
+    score = new component("30px", "Consolas", "black", 500, 40, "text");
     plateau.start();
 }
 
@@ -84,6 +84,7 @@ function updateGameArea() {
     var x, longueur, gap, longueurMin, longueurMax, minGap, maxGap;
     for (i = 0; i < obstacle.length; i += 1) {
         if (personnage.crashWith(obstacle[i])) {
+            this.jeuxFini(i);
             return;
         }
     }
@@ -114,6 +115,15 @@ function everyinterval(n) {
         return true;
     }
     return false;
+}
+
+function jeuxFini(i) {
+    var messageMort;
+    if (personnage.crashWith(obstacle[i])) {
+        messageMort = new component("30px", "Consolas", "red", 150, 60, "text");
+        messageMort.text = "Il vous à attrapé...";
+        messageMort.update();
+    }
 }
 
 function sauter(n) {
