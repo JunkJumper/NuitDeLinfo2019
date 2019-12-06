@@ -25,6 +25,7 @@ var tableau = {
     }
 }
 
+
 //METHODES
 function update(score) {
     if (score > premier)
@@ -37,8 +38,6 @@ function update(score) {
 
 function load() {
     update();
-    for (var i = 0; i < score.lenght; i++)
-        document.write("j'écris");
-    //document.write(score[i] + score[score[i]] + '<br />');
+    //for (var i = 0; i < score.lenght; i++)
     tableau.start();
 }
