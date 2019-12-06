@@ -9,7 +9,7 @@ var plateau = {
         this.canvas.width = 700;
         this.canvas.height = 280;
         this.context = this.canvas.getContext("2d");
-        this.canvas.style = "position:absolute; left: 50%;  margin-left: -250px; bottom: 50%; margin-top: +50px";
+        this.canvas.style = "position:absolute; left: 50%;  margin-left: -250px; bottom: 50%; margin-top: +50px; border-top: 2px solid #0d0d0d";
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.frameNo = 0;
         this.interval = setInterval(updateGameArea, 20);
@@ -74,13 +74,11 @@ function component(largeur, longueur, color, x, y, type) {
 
 //METHODES
 function startGame() {
-    personnage = new component(30, 30, "blue", 10, 120);
+    personnage = new component(30, 50, "blue", 10, 120);
     personnage.gravity = 0.05;
     score = new component("30px", "Consolas", "black", 280, 40, "text");
     plateau.start();
 }
-
-
 
 function updateGameArea() {
     var x, longueur, gap, longueurMin, longueurMax, minGap, maxGap;
@@ -91,10 +89,10 @@ function updateGameArea() {
     }
     plateau.clear();
     plateau.frameNo += 1;
-    if (plateau.frameNo == 1 || everyinterval(150)) {
+    if (plateau.frameNo == 1 || everyinterval(150)) { //pour créer les barres
         x = plateau.canvas.width;
         longueurMin = 20;
-        longueurMax = 200;
+        longueurMax = 150;
         longueur = Math.floor(Math.random() * (longueurMax - longueurMin + 1) + longueurMin);
         minGap = 50;
         maxGap = 200;
@@ -119,8 +117,6 @@ function everyinterval(n) {
 }
 
 function sauter(n) {
-    let audio = new Audio("./");
-    audio.play();
     personnage.gravity = n;
 }
 
