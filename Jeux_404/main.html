@@ -9,8 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
         canvas {
-            border: 1px solid #d3d3d3;
-            background-color: #f1f1f1;
+            border-bottom: 2px solid #0d0d0d;
         }
         
         .center {
@@ -18,21 +17,38 @@
         }
         
         button {
-            margin-top: +300px;
+            margin-top: +50px;
             display: block;
             margin-left: auto;
             margin-right: auto;
         }
+        
+        img {
+            margin-top: +130px;
+            margin-left: +300px;
+        }
     </style>
 </head>
 
-<body onload="startGame()" onload="load()">
+<body>
     <h1 class="center">Fuyez l'homme en noir !</h1>
-    <script src="./scores.js"></script>
-    <script src="./script.js"></script>
+
+    <script src="./scores.js">
+        startGame()
+    </script>
+    <script src="./script.js">
+        load()
+    </script>
+
+    <img src="./gifs/homme trop swag.gif" alt="homme en noir" height="150" width="150">
 
     <br>
     <button onmousedown="sauter(-0.5)" onmouseup="sauter(0.05)">SAUTER</button>
+
+    <script>
+        startGame()
+        load()
+    </script>
 </body>
 
 </html>
