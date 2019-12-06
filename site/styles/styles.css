@@ -146,6 +146,9 @@ h2 {
     padding-left: 30px;
 }
 
+p.bio {
+    text-align: justify;
+}
 
 
 /* ================================= */
