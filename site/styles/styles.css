@@ -142,6 +142,10 @@ section.section-profile {
     display: table;
 }
 
+h2 {
+    padding-left: 30px;
+}
+
 
 
 /* ================================= */
@@ -154,7 +158,11 @@ section.section-profile {
     box-sizing: border-box;
     float: left;
     width: 50%;
-    padding: 50px;
+    padding: 30px;
+}
+
+.box:first-child {
+    border-right: 1px solid grey;
 }
 
 .clearfix::after {
@@ -179,4 +187,40 @@ section.section-profile {
     justify-content: flex-end;
     align-content: flex-end;
     width: 100%;
+}
+
+.title {
+    color: dimgrey;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+img {
+    width: 50px;
+    border: 1px solid grey;
+}
+
+[alt="gallery"] {
+    display: inline-block;
+    clip-path: inset(5% 12%);
+    width: 121px;
+    border: 1px solid grey;
+}
+
+[href^="amis"],
+[href^="gallery"] {
+    text-decoration: none;
+    color: grey;
+    text-decoration: underline;
+}
+
+
+/* =================== */
+
+.post {
+    border: 1px solid grey;
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    padding: 30px;
 }
