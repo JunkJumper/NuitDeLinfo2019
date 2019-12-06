@@ -6,10 +6,10 @@ var score;
 var plateau = {
     canvas: document.createElement("canvas"),
     start: function() {
-        this.canvas.width = 480;
-        this.canvas.height = 270;
+        this.canvas.width = 700;
+        this.canvas.height = 280;
         this.context = this.canvas.getContext("2d");
-        this.canvas.style = "position:absolute; left: 50%;  margin-left: -250px; bottom: 50%; margin-bottom: +50px";
+        this.canvas.style = "position:absolute; left: 50%;  margin-left: -250px; bottom: 50%; margin-top: +50px";
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.frameNo = 0;
         this.interval = setInterval(updateGameArea, 20);
@@ -83,7 +83,7 @@ function startGame() {
 
 
 function updateGameArea() {
-    var x, taille, gap, tailleMin, tailleMax, minGap, maxGap;
+    var x, longueur, gap, longueurMin, longueurMax, minGap, maxGap;
     for (i = 0; i < obstacle.length; i += 1) {
         if (personnage.crashWith(obstacle[i])) {
             return;
@@ -93,14 +93,13 @@ function updateGameArea() {
     plateau.frameNo += 1;
     if (plateau.frameNo == 1 || everyinterval(150)) {
         x = plateau.canvas.width;
-        tailleMin = 20;
-        tailleMax = 200;
-        taille = Math.floor(Math.random() * (tailleMax - tailleMin + 1) + tailleMin);
+        longueurMin = 20;
+        longueurMax = 200;
+        longueur = Math.floor(Math.random() * (longueurMax - longueurMin + 1) + longueurMin);
         minGap = 50;
         maxGap = 200;
         gap = Math.floor(Math.random() * (maxGap - minGap + 1) + minGap);
-        obstacle.push(new component(10, taille, "green", x, 0));
-        obstacle.push(new component(10, x - taille - gap, "green", x, taille + gap));
+        obstacle.push(new component(10, x - longueur - gap, "grey", x, longueur + gap));
     }
     for (i = 0; i < obstacle.length; i += 1) {
         obstacle[i].x += -1;
